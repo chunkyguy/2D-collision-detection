@@ -1,3 +1,10 @@
+//
+//  Main.cpp
+//  QuadTree
+//
+//  Created by Sidharth on 05/01/13.
+//  Copyright (c) 2013 whackylabs. All rights reserved.
+//
 #include "Rectangle.h"
 #include "Constants.h"
 #include "quadtree/qtree.h"

@@ -1,3 +1,11 @@
+//
+//  qtree.cpp
+//  QuadTree
+//
+//  Created by Sidharth on 05/01/13.
+//  Copyright (c) 2013 whackylabs. All rights reserved.
+//
+
 #include "qtree.h"
 #include <algorithm>
 
