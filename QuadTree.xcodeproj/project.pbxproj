@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6576C19316917905004AAC46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576C19216917905004AAC46 /* Foundation.framework */; };
+		6576C19616917905004AAC46 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6576C19516917905004AAC46 /* main.cpp */; };
+		6576C19816917905004AAC46 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6576C19716917905004AAC46 /* ResourcePath.mm */; };
+		6576C19C16917905004AAC46 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6576C19B16917905004AAC46 /* sansation.ttf */; };
+		6576C19E16917905004AAC46 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6576C19D16917905004AAC46 /* cute_image.jpg */; };
+		6576C1A016917905004AAC46 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 6576C19F16917905004AAC46 /* nice_music.ogg */; };
+		6576C1A516917905004AAC46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6576C1A316917905004AAC46 /* InfoPlist.strings */; };
+		6576C1AC16917999004AAC46 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576C1AB16917999004AAC46 /* SFML.framework */; };
+		6576C1B216917A48004AAC46 /* qtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6576C1AF16917A48004AAC46 /* qtree.cpp */; };
+		65F50ED316981EED00B166C2 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65F50ED116981EED00B166C2 /* Rectangle.cpp */; };
+		65F5BE9E1696F04C004038B5 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F5BE9D1696F04C004038B5 /* GLKit.framework */; };
+		65F5BEA11696F0F6004038B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F5BEA01696F0F6004038B5 /* CoreGraphics.framework */; };
+		65F5BEA41696FBDD004038B5 /* qtree_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65F5BEA21696FBDD004038B5 /* qtree_utility.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6576C18E16917905004AAC46 /* QuadTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6576C19216917905004AAC46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6576C19516917905004AAC46 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6576C19716917905004AAC46 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		6576C19916917905004AAC46 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		6576C19B16917905004AAC46 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		6576C19D16917905004AAC46 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		6576C19F16917905004AAC46 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		6576C1A216917905004AAC46 /* QuadTree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadTree-Info.plist"; sourceTree = "<group>"; };
+		6576C1A416917905004AAC46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6576C1AB16917999004AAC46 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = ../../../../../Library/Frameworks/SFML.framework; sourceTree = "<group>"; };
+		6576C1AF16917A48004AAC46 /* qtree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qtree.cpp; sourceTree = "<group>"; };
+		6576C1B016917A48004AAC46 /* qtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qtree.h; sourceTree = "<group>"; };
+		65F50ED116981EED00B166C2 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		65F50ED216981EED00B166C2 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		65F50ED41698209C00B166C2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		65F5BE9D1696F04C004038B5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		65F5BEA01696F0F6004038B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65F5BEA21696FBDD004038B5 /* qtree_utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qtree_utility.cpp; sourceTree = "<group>"; };
+		65F5BEA31696FBDD004038B5 /* qtree_utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qtree_utility.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6576C18B16917905004AAC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F5BEA11696F0F6004038B5 /* CoreGraphics.framework in Frameworks */,
+				65F5BE9E1696F04C004038B5 /* GLKit.framework in Frameworks */,
+				6576C1AC16917999004AAC46 /* SFML.framework in Frameworks */,
+				6576C19316917905004AAC46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6576C18216917904004AAC46 = {
+			isa = PBXGroup;
+			children = (
+				65F5BEA01696F0F6004038B5 /* CoreGraphics.framework */,
+				65F5BE9D1696F04C004038B5 /* GLKit.framework */,
+				6576C1AB16917999004AAC46 /* SFML.framework */,
+				6576C19416917905004AAC46 /* QuadTree */,
+				6576C19116917905004AAC46 /* Frameworks */,
+				6576C18F16917905004AAC46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6576C18F16917905004AAC46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6576C18E16917905004AAC46 /* QuadTree.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6576C19116917905004AAC46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6576C19216917905004AAC46 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6576C19416917905004AAC46 /* QuadTree */ = {
+			isa = PBXGroup;
+			children = (
+				6576C1AD16917A48004AAC46 /* quadtree */,
+				6576C19516917905004AAC46 /* main.cpp */,
+				65F50ED116981EED00B166C2 /* Rectangle.cpp */,
+				65F50ED216981EED00B166C2 /* Rectangle.h */,
+				6576C19716917905004AAC46 /* ResourcePath.mm */,
+				6576C19916917905004AAC46 /* ResourcePath.hpp */,
+				65F50ED41698209C00B166C2 /* Constants.h */,
+				6576C19A16917905004AAC46 /* Resources */,
+				6576C1A116917905004AAC46 /* Supporting Files */,
+			);
+			path = QuadTree;
+			sourceTree = "<group>";
+		};
+		6576C19A16917905004AAC46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6576C19B16917905004AAC46 /* sansation.ttf */,
+				6576C19D16917905004AAC46 /* cute_image.jpg */,
+				6576C19F16917905004AAC46 /* nice_music.ogg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6576C1A116917905004AAC46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6576C1A216917905004AAC46 /* QuadTree-Info.plist */,
+				6576C1A316917905004AAC46 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6576C1AD16917A48004AAC46 /* quadtree */ = {
+			isa = PBXGroup;
+			children = (
+				6576C1AF16917A48004AAC46 /* qtree.cpp */,
+				6576C1B016917A48004AAC46 /* qtree.h */,
+				65F5BEA21696FBDD004038B5 /* qtree_utility.cpp */,
+				65F5BEA31696FBDD004038B5 /* qtree_utility.h */,
+			);
+			path = quadtree;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6576C18D16917905004AAC46 /* QuadTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6576C1A816917905004AAC46 /* Build configuration list for PBXNativeTarget "QuadTree" */;
+			buildPhases = (
+				6576C18916917905004AAC46 /* ShellScript */,
+				6576C18A16917905004AAC46 /* Sources */,
+				6576C18B16917905004AAC46 /* Frameworks */,
+				6576C18C16917905004AAC46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadTree;
+			productName = QuadTree;
+			productReference = 6576C18E16917905004AAC46 /* QuadTree.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6576C18416917904004AAC46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = whackylabs;
+			};
+			buildConfigurationList = 6576C18716917904004AAC46 /* Build configuration list for PBXProject "QuadTree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6576C18216917904004AAC46;
+			productRefGroup = 6576C18F16917905004AAC46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6576C18D16917905004AAC46 /* QuadTree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6576C18C16917905004AAC46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6576C19C16917905004AAC46 /* sansation.ttf in Resources */,
+				6576C19E16917905004AAC46 /* cute_image.jpg in Resources */,
+				6576C1A016917905004AAC46 /* nice_music.ogg in Resources */,
+				6576C1A516917905004AAC46 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6576C18916917905004AAC46 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required sfml dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# Are we building a project that uses framework or dylibs ?\nif [ $SFML_LINK_PREFIX = $SFML_LINK_FRAMEWORKS_PREFIX ]\nthen\n    frameworks=1\nelse\n    frameworks=0\nfi\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Frameworks\n    \n    if [ -z $1 ]\n    then\n        echo \"no parameter! ERROR!\"\n        exit\n    else\n        # clean potentially old stuff\n        rm -f $dest/libsfml-$1.2.dylib\n        rm -f $dest/libsfml-$1-d.2.dylib\n        rm -fr $dest/sfml-$1.framework\n    \n        # copy SFML libraries\n        if [ $frameworks ]\n        then\n            ditto \"/Library/Frameworks/sfml-$1.framework\" \"$dest/sfml-$1.framework\"\n        elif [ $CONFIGURATION = \"Debug\" ]\n        then\n            ditto \"/usr/local/lib/libsfml-$1-d.2.dylib\" \"$dest/libsfml-$1-d.2.dylib\"\n        else\n            ditto \"/usr/local/lib/libsfml-$1.2.dylib\" \"$dest/libsfml-$1.2.dylib\"\n        fi\n        \n        if [ $1 = \"audio\" ]\n        then\n            # copy sndfile framework too\n            ditto \"/Library/Frameworks/sndfile.framework\" \"$dest/sndfile.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6576C18A16917905004AAC46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6576C19616917905004AAC46 /* main.cpp in Sources */,
+				6576C19816917905004AAC46 /* ResourcePath.mm in Sources */,
+				6576C1B216917A48004AAC46 /* qtree.cpp in Sources */,
+				65F5BEA41696FBDD004038B5 /* qtree_utility.cpp in Sources */,
+				65F50ED316981EED00B166C2 /* Rectangle.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6576C1A316917905004AAC46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6576C1A416917905004AAC46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6576C1A616917905004AAC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = "";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "-d";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_FRAMEWORKS_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_FRAMEWORKS_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX)sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+			};
+			name = Debug;
+		};
+		6576C1A716917905004AAC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = "";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_FRAMEWORKS_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_FRAMEWORKS_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX)sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+			};
+			name = Release;
+		};
+		6576C1A916917905004AAC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "QuadTree/QuadTree-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6576C1AA16917905004AAC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "QuadTree/QuadTree-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6576C18716917904004AAC46 /* Build configuration list for PBXProject "QuadTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6576C1A616917905004AAC46 /* Debug */,
+				6576C1A716917905004AAC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6576C1A816917905004AAC46 /* Build configuration list for PBXNativeTarget "QuadTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6576C1A916917905004AAC46 /* Debug */,
+				6576C1AA16917905004AAC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6576C18416917904004AAC46 /* Project object */;
+}
