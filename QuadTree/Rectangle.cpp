@@ -23,18 +23,33 @@ void Rectangle::render(sf::RenderWindow &w){
     w.draw(*shape_);
 }
 
+void Rectangle::setEffectivePosition(sf::Vector2f newPos){
+	if(newPos.x < 0){
+		direction_->x *= -1;
+		newPos.x += shape_->getSize().x;
+	}else if(newPos.x > SCREEN_WIDTH){
+		direction_->x *= -1;
+		newPos.x -= shape_->getSize().x;
+	}
+	
+	if(newPos.y < 0){
+		direction_->y *= -1;
+		newPos.y += shape_->getSize().y;
+	}else if(newPos.y > SCREEN_HEIGHT){
+		direction_->y *= -1;
+		newPos.y -= shape_->getSize().y;
+	}
+	
+	shape_->setPosition(newPos);
+}
+
 void Rectangle::update(int dt){
     double newX = shape_->getPosition().x;
     double newY = shape_->getPosition().y;
     newX += direction_->x * speed_->x;
-    if(newX < 0 || newX > SCREEN_WIDTH){
-        direction_->x *= -1;
-    }
     newY += direction_->y * speed_->y;
-    if(newY < 0 || newY > SCREEN_HEIGHT){
-        direction_->y *= -1;
-    }
-    shape_->setPosition(sf::Vector2f(newX, newY));
+	sf::Vector2f newPos(newX, newY);
+	setEffectivePosition(newPos);
 }
 void Rectangle::checkHit(Rectangle *r){
     wle::AABB fr1 = this->getFrame();
@@ -59,13 +74,16 @@ void Rectangle::checkHit(Rectangle *r){
         double diff_x = fr1.getCenter().getX() - fr2.getCenter().getX();
         double diff_y = fr1.getCenter().getY() - fr2.getCenter().getY();
 
-        shape_->setPosition(shape_->getPosition().x + diff_x/2, shape_->getPosition().y + diff_y/2);
+		sf::Vector2f newPos(shape_->getPosition().x + diff_x/2, shape_->getPosition().y + diff_y/2);
+		setEffectivePosition(newPos);
         //shape_->setFillColor(sf::Color(rand()%255, rand()%255, rand()%255));
-            
-        r->shape_->setPosition(r->shape_->getPosition().x - diff_x/2, r->shape_->getPosition().y - diff_y/2);
+
+		sf::Vector2f newPos2(r->shape_->getPosition().x - diff_x/2, r->shape_->getPosition().y - diff_y/2);
+		r->setEffectivePosition(newPos2);
         //r->shape_->setFillColor(sf::Color(rand()%255, rand()%255, rand()%255));
     }
 }
+
 sf::Vector2f pointToVec(wle::Point p){
     return sf::Vector2f(p.getX(), p.getY());
 }

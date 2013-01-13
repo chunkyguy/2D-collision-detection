@@ -31,6 +31,8 @@ private:
     sf::RectangleShape *shape_;
     sf::Vector2i *direction_;
     sf::Vector2f *speed_;
+	//Calculate if the newPos is out of bounds of the screen, move it in.
+	void setEffectivePosition(sf::Vector2f newPos);
 };
 
 sf::Vector2f pointToVec(wle::Point p);

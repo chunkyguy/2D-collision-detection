@@ -33,7 +33,7 @@ void checkCollisionQuadTree(std::vector<Rectangle *>objs){
     delete root;
 }
 
-//Do NxN check
+//Do O(n^2) check
 void checkCollision(std::vector<Rectangle *> &objs){
     std::vector<Rectangle *>::iterator it = objs.begin();
     while(it != objs.end()){
