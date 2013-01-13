@@ -15,11 +15,15 @@
 #include "qtree_utility.h"
 #include <iostream>
 
+//bounds	 : object coordinate space.
+//frame  : world coordinate space.
 class Rectangle{
 public:
     Rectangle(wle::AABB bounds);
     void update(int dt);
     void render(sf::RenderWindow &w);
+	//check if the other rectangle hits. If it does, apply conservation of momentum. Swap speed.
+	//swap direction if coming from opposite directions.
     void checkHit(Rectangle *r);
     wle::AABB getFrame(){
         sf::FloatRect r = shape_->getGlobalBounds();
@@ -32,6 +36,7 @@ private:
     sf::Vector2i *direction_;
     sf::Vector2f *speed_;
 	//Calculate if the newPos is out of bounds of the screen, move it in.
+	//Use this instead of setting shape_->setPosition()
 	void setEffectivePosition(sf::Vector2f newPos);
 };
 

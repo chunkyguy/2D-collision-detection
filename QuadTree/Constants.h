@@ -9,7 +9,7 @@
 #ifndef QuadTree_Constants_h
 #define QuadTree_Constants_h
 
-#define SCREEN_WIDTH 480
-#define SCREEN_HEIGHT 320
+#define SCREEN_WIDTH 960
+#define SCREEN_HEIGHT 640
 
 #endif

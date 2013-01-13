@@ -56,12 +56,6 @@ void Rectangle::checkHit(Rectangle *r){
     wle::AABB fr2 = r->getFrame();
    // std::cout << fr1 << "\t\t" << fr2 <<std::endl;
     if(fr1.intersects(fr2)){
-        std::cout << "HIT" << std::endl;
-
-//        if(diff_x > 0){
-//
-//        }
-        
         //conservation of momentum
         sf::Vector2i tmpDir(*direction_);
         direction_->x = r->direction_->x;   direction_->y = r->direction_->y;
@@ -69,18 +63,22 @@ void Rectangle::checkHit(Rectangle *r){
         sf::Vector2f tmpSpeed(*speed_);
         speed_->x = r->speed_->x;   speed_->y = r->speed_->y;
         r->speed_->x = tmpSpeed.x;  r->speed_->y = tmpSpeed.y;
-        
 
         double diff_x = fr1.getCenter().getX() - fr2.getCenter().getX();
         double diff_y = fr1.getCenter().getY() - fr2.getCenter().getY();
 
 		sf::Vector2f newPos(shape_->getPosition().x + diff_x/2, shape_->getPosition().y + diff_y/2);
 		setEffectivePosition(newPos);
-        //shape_->setFillColor(sf::Color(rand()%255, rand()%255, rand()%255));
 
 		sf::Vector2f newPos2(r->shape_->getPosition().x - diff_x/2, r->shape_->getPosition().y - diff_y/2);
 		r->setEffectivePosition(newPos2);
-        //r->shape_->setFillColor(sf::Color(rand()%255, rand()%255, rand()%255));
+		
+		//for fun! Color them towards grey
+		sf::Color clr1 = shape_->getFillColor();
+		sf::Color clr2 = r->shape_->getFillColor();
+		sf::Color newClr((clr1.r + clr2.r)/2, (clr1.g + clr2.g)/2, (clr1.b + clr2.b)/2);
+		shape_->setFillColor(newClr);
+		r->shape_->setFillColor(newClr);
     }
 }
 

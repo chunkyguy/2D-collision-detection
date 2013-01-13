@@ -77,7 +77,7 @@ int main (int argc, const char * argv[]){
     int objects = 0;
     sf::Text text("Objects: ", font, 50);
     text.setPosition(0, SCREEN_HEIGHT/2);
-    text.setColor(sf::Color::White);
+    text.setColor(sf::Color::Green);
 
     srand(time(0));
     sf::Clock c;
@@ -118,7 +118,7 @@ int main (int argc, const char * argv[]){
         c.restart();
         
     	// Clear screen
-    	window.clear();
+    	window.clear(sf::Color(255, 255, 255));
         window.draw(text);
         for(std::vector<Rectangle *>::iterator it = entities_.begin(); it != entities_.end(); it++){
             (*it)->render(window);
